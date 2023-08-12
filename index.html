@@ -9,49 +9,64 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <style>
-    .overflow{
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .overflow {
         overflow: scroll;
     }
-    .card{
+
+    .card {
         height: 500px;
-        
+
     }
-    .card0{
+
+    .card0 {
         height: 600px;
     }
 
-    @media  screen and (max-width:760px) {
-        .overflow{
-       overflow: unset;
+    @media screen and (max-width:760px) {
+        .overflow {
+            overflow: unset;
+        }
     }
-    }
-   
 </style>
 
 <body>
-    <header class="container-fluid">
+    <header class="container-fluid ">
 
-
+<div class="container-fluid bg-primary">
         <!-- ---first header start----- -->
-        <div class="container bg-info">
+        <div class="container bg-primary ">
             <div class="row">
                 <div class="col-lg-6 py-2">
-                    <img src="./images/logo2.jpg" alt="store-logo" width="30px">
+                    <img src="./images/logo2.png" alt="store-logo" width="200px" height="50px">
                 </div>
                 <div class="col-lg-6 py-2 ">
-                    <div class="row d-flex justify-content-end">
+                    <div class="row d-flex justify-content-between">
                         <div class="col-6">
                             <form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
+                                <button class="btn btn-outline-light" type="submit">Search</button>
                             </form>
                         </div>
-                        <div class="col-4 "><a href="#" class="text-decoration-none text-white ">sing in</a></div>
+                        <div class="col-4">
+                            <nav aria-label="breadcrumb mt-5">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="./pages/login.html" class="text-decoration-none text-white">Login</a></li>
+                                  <li class="breadcrumb-item"><a href="./pages/signup.html" class="text-decoration-none text-white">Sing Up</a></li>
+                                  
+                                </ol>
+                              </nav>
+                        </div>
+                        
                     </div>
 
                 </div>
             </div>
         </div>
+    </div>
         <!-- ----first header------ -->
 
         <!-- ---second-herder-start----- -->
@@ -71,10 +86,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link" href="#">Product</a>
+                            <a class="nav-link" href="./pages/product.html">Product</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link" href="#">Special Offer</a>
+                            <a class="nav-link" href="./pages/offers.html">Special Offer</a>
                         </li>
                         <li class="nav-item px-4">
                             <a class="nav-link" href="#">Online Shopping</a>
@@ -94,43 +109,50 @@
         <!-- -----second-header-end----- -->
         <div id="carouselExampleIndicators" class="carousel slide carousel-dark " data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./images/index/carousel1.avif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/index/carousel2.avif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/index/carousel3.avif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/index/carousel4.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/index/carousel5.avif" class="d-block w-100" alt="...">
-              </div>
+                <div class="carousel-item active">
+                    <img src="./images/index/carousel1.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/index/carousel2.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/index/carousel3.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/index/carousel4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/index/carousel5.avif" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
-          <div class="row mt-2">
-            <div class="col-12" > 
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
                 <img src="./images/index/carousel6.avif" alt="" class="w-100 ">
             </div>
-          </div>
+        </div>
 
 
     </header>
@@ -191,7 +213,8 @@
                 </div>
                 <div class=" col-12 col-md-3 order-5 my-3 my-md-0">
                     <div class="card border-0 shadow-lg">
-                        <img src="./images/index/freez2.webp" class="card-img-top img-fluid h-50 w-50 d-block mx-auto" alt="...">
+                        <img src="./images/index/freez2.webp" class="card-img-top img-fluid h-50 w-50 d-block mx-auto"
+                            alt="...">
                         <div class="card-body">
                             <h4 class="card-title text-center"><b>Press</b></h4>
                             <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
@@ -204,7 +227,8 @@
                 </div>
                 <div class=" col-12 col-md-3 order-4 my-3 my-md-0 d-none d-md-block">
                     <div class="card border-0 shadow-lg">
-                        <img src="./images/index/washing.webp" class="card-img-top img-fluid h-50 w-50 d-block mx-auto" alt="...">
+                        <img src="./images/index/washing.webp" class="card-img-top img-fluid h-50 w-50 d-block mx-auto"
+                            alt="...">
                         <div class="card-body">
                             <h4 class="card-title text-center"><b>Press</b></h4>
                             <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
@@ -217,7 +241,8 @@
                 </div>
                 <div class=" col-12 col-md-3 order-3 my-3 my-md-0 d-none d-md-block">
                     <div class="card border-0 shadow-lg">
-                        <img src="./images/index/ac.webp" class="card-img-top img-fluid h-50 w-50 d-block mx-auto" alt="...">
+                        <img src="./images/index/ac.webp" class="card-img-top img-fluid h-50 w-50 d-block mx-auto"
+                            alt="...">
                         <div class="card-body">
                             <h4 class="card-title text-center"><b>Press</b></h4>
                             <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
@@ -230,7 +255,8 @@
                 </div>
                 <div class=" col-12 col-md-3 order-2 my-3 my-md-0 d-none d-md-block">
                     <div class="card border-0 shadow-lg">
-                        <img src="./images/index/laptop.webp" class="card-img-top img-fluid h-50 w-50 d-block mx-auto" alt="...">
+                        <img src="./images/index/laptop.webp" class="card-img-top img-fluid h-50 w-50 d-block mx-auto"
+                            alt="...">
                         <div class="card-body">
                             <h4 class="card-title text-center"><b>Press</b></h4>
                             <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
@@ -243,7 +269,8 @@
                 </div>
                 <div class=" col-12 col-md-3 my-3 my-md-0 d-none d-md-block">
                     <div class="card border-0 shadow-lg">
-                        <img src="./images/index/cooler.webp" class="card-img-top img-fluid h-50 w-50 d-block mx-auto" alt="...">
+                        <img src="./images/index/cooler.webp" class="card-img-top img-fluid h-50 w-50 d-block mx-auto"
+                            alt="...">
                         <div class="card-body">
                             <h4 class="card-title text-center"><b>Press</b></h4>
                             <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
@@ -254,12 +281,12 @@
                         </div>
                     </div>
                 </div>
-               
+
 
             </div>
             <div class="d-flex flex-nowrap">
                 ...
-              </div>
+            </div>
         </div>
     </div>
 
@@ -377,260 +404,330 @@
                         </div>
                     </div>
                 </div>
-               
+
 
             </div>
             <div class="d-flex flex-nowrap">
                 ...
-              </div>
+            </div>
         </div>
     </div>
 
 
-<!-- ----------section3-------------- -->
+    <!-- ----------section3-------------- -->
 
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 my-3">
-                <h2>Best Deals On Sarees</h2>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 my-3">
+                    <h2>Best Deals On Sarees</h2>
+                </div>
+            </div>
+            <div class="row d-md-flex flex-md-nowrap overflow py-3">
+                <div class=" col-12 col-md-3 order-8  my-3 my-md-0">
+                    <div class="card border-0 shadow-lg card0">
+                        <img src="./images/index/sarees1.jpg" class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-3 order-7 my-3 my-md-0">
+                    <div class="card border-0 shadow-lg card0">
+                        <img src="./images/index/sarees2.2.jpg" class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-3 order-6 my-3 my-md-0">
+                    <div class="card border-0 shadow-lg card0">
+                        <img src="./images/index/sarees3.jpg" class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-3 order-5 my-3 my-md-0">
+                    <div class="card border-0 shadow-lg card0">
+                        <img src="./images/index/sarees4.jpg" class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-3 order-4 my-3 my-md-0 d-none d-md-block">
+                    <div class="card border-0 shadow-lg card0">
+                        <img src="./images/index/sarees5.jpg" class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-3 order-3 my-3 my-md-0 d-none d-md-block">
+                    <div class="card border-0 shadow-lg card0">
+                        <img src="./images/index/sarees6.jpg" class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-3 order-2 my-3 my-md-0 d-none d-md-block">
+                    <div class="card border-0 shadow-lg card0">
+                        <img src="./images/index/sarees7.jpg" class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-3 my-3 my-md-0 d-none d-md-block">
+                    <div class="card border-0 shadow-lg card0">
+                        <img src="./images/index/sarees8.jpg" class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="d-flex flex-nowrap">
+                ...
             </div>
         </div>
-        <div class="row d-md-flex flex-md-nowrap overflow py-3">
-            <div class=" col-12 col-md-3 order-8  my-3 my-md-0">
-                <div class="card border-0 shadow-lg card0">
-                    <img src="./images/index/sarees1.jpg" class="card-img-top img-fluid h-75" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-12 col-md-3 order-7 my-3 my-md-0">
-                <div class="card border-0 shadow-lg card0">
-                    <img src="./images/index/sarees2.2.jpg" class="card-img-top img-fluid h-75" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-12 col-md-3 order-6 my-3 my-md-0">
-                <div class="card border-0 shadow-lg card0">
-                    <img src="./images/index/sarees3.jpg" class="card-img-top img-fluid h-75" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-12 col-md-3 order-5 my-3 my-md-0">
-                <div class="card border-0 shadow-lg card0">
-                    <img src="./images/index/sarees4.jpg" class="card-img-top img-fluid h-75" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-12 col-md-3 order-4 my-3 my-md-0 d-none d-md-block">
-                <div class="card border-0 shadow-lg card0">
-                    <img src="./images/index/sarees5.jpg" class="card-img-top img-fluid h-75" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-12 col-md-3 order-3 my-3 my-md-0 d-none d-md-block">
-                <div class="card border-0 shadow-lg card0">
-                    <img src="./images/index/sarees6.jpg" class="card-img-top img-fluid h-75" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-12 col-md-3 order-2 my-3 my-md-0 d-none d-md-block">
-                <div class="card border-0 shadow-lg card0">
-                    <img src="./images/index/sarees7.jpg" class="card-img-top img-fluid h-75" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col-12 col-md-3 my-3 my-md-0 d-none d-md-block">
-                <div class="card border-0 shadow-lg card0">
-                    <img src="./images/index/sarees8.jpg" class="card-img-top img-fluid h-75" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-           
-
-        </div>
-        <div class="d-flex flex-nowrap">
-            ...
-          </div>
     </div>
-</div>
 
-<!-- --------section4--------------- -->
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 my-3">
-                <h2>Best Deals On Beauty Product</h2>
-            </div>
-        </div>
-        <div class="row d-md-flex flex-md-nowrap overflow py-3">
-            <div class=" col-12 col-md-3 order-8  my-3 my-md-0">
-                <div class="card border-0 shadow-lg">
-                    <img src="./images/index/makeup1.avif" class="card-img-top img-fluid h-50" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
-                    </div>
+    <!-- --------section4--------------- -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 my-3">
+                    <h2>Best Deals On Beauty Product</h2>
                 </div>
             </div>
-            <div class=" col-12 col-md-3 order-7 my-3 my-md-0">
-                <div class="card border-0 shadow-lg">
-                    <img src="./images/index/makeup2.avif" class="card-img-top img-fluid h-50" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+            <div class="row d-md-flex flex-md-nowrap overflow py-3">
+                <div class=" col-12 col-md-3 order-8  my-3 my-md-0">
+                    <div class="card border-0 shadow-lg">
+                        <img src="./images/index/makeup1.avif" class="card-img-top img-fluid h-50" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class=" col-12 col-md-3 order-6 my-3 my-md-0">
-                <div class="card border-0 shadow-lg">
-                    <img src="./images/index/makeup3.avif" class="card-img-top img-fluid h-50" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                <div class=" col-12 col-md-3 order-7 my-3 my-md-0">
+                    <div class="card border-0 shadow-lg">
+                        <img src="./images/index/makeup2.avif" class="card-img-top img-fluid h-50" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class=" col-12 col-md-3 order-5 my-3 my-md-0">
-                <div class="card border-0 shadow-lg">
-                    <img src="./images/index/makeup4.avif" class="card-img-top img-fluid h-50" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                <div class=" col-12 col-md-3 order-6 my-3 my-md-0">
+                    <div class="card border-0 shadow-lg">
+                        <img src="./images/index/makeup3.avif" class="card-img-top img-fluid h-50" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class=" col-12 col-md-3 order-4 my-3 my-md-0 d-none d-md-block">
-                <div class="card border-0 shadow-lg">
-                    <img src="./images/index/makeup5.avif" class="card-img-top img-fluid h-50" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                <div class=" col-12 col-md-3 order-5 my-3 my-md-0">
+                    <div class="card border-0 shadow-lg">
+                        <img src="./images/index/makeup4.avif" class="card-img-top img-fluid h-50" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class=" col-12 col-md-3 order-3 my-3 my-md-0 d-none d-md-block">
-                <div class="card border-0 shadow-lg">
-                    <img src="./images/index/makeup6.avif" class="card-img-top img-fluid h-50" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                <div class=" col-12 col-md-3 order-4 my-3 my-md-0 d-none d-md-block">
+                    <div class="card border-0 shadow-lg">
+                        <img src="./images/index/makeup5.avif" class="card-img-top img-fluid h-50" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class=" col-12 col-md-3 order-2 my-3 my-md-0 d-none d-md-block">
-                <div class="card border-0 shadow-lg">
-                    <img src="./images/index/makeup7.avif" class="card-img-top img-fluid h-50" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                <div class=" col-12 col-md-3 order-3 my-3 my-md-0 d-none d-md-block">
+                    <div class="card border-0 shadow-lg">
+                        <img src="./images/index/makeup6.avif" class="card-img-top img-fluid h-50" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class=" col-12 col-md-3 my-3 my-md-0 d-none d-md-block">
-                <div class="card border-0 shadow-lg">
-                    <img src="./images/index/makeup8.avif" class="card-img-top img-fluid h-50" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center"><b>Press</b></h4>
-                        <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
-                            Iron (Blue, Black)</p>
-                        <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
-                                off</i></p>
-                        <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                <div class=" col-12 col-md-3 order-2 my-3 my-md-0 d-none d-md-block">
+                    <div class="card border-0 shadow-lg">
+                        <img src="./images/index/makeup7.avif" class="card-img-top img-fluid h-50" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
                     </div>
                 </div>
+                <div class=" col-12 col-md-3 my-3 my-md-0 d-none d-md-block">
+                    <div class="card border-0 shadow-lg">
+                        <img src="./images/index/makeup8.avif" class="card-img-top img-fluid h-50" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><b>Press</b></h4>
+                            <p class="card-text text-center">Orient Electric by orient Fabri Press DIFP10BP 1000 W Dry
+                                Iron (Blue, Black)</p>
+                            <p class="card-text text-center"><b>&#8377;744</b> &nbsp; <del>1,202</del> &nbsp; <i>40%
+                                    off</i></p>
+                            <a href="#" class="btn btn-danger d-block mx-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-           
 
         </div>
-        <div class="d-flex flex-nowrap">
-            ...
-          </div>
     </div>
-</div>
+
+    <div class="container-fluid mt-5 shadow-lg">
+        <div class="row d-flex justify-content-around">
+            <div class=" col-12 col-md-3 my-4">
+<h2><b>All Category</b></h2>
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a class="nav-link " href="#"><h4 class="text-dark">Electronic</h4></a>
+      </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" href="#"><h4 class="text-dark">Fashion</h4></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><h4 class="text-dark">Beauty</h4></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><h4 class="text-dark">Home & Kitchen</h4></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><h4 class="text-dark">Furniture</h4></a>
+    </li>
+   
+  </ul>
+            </div>
+            <div class=" col-12 col-md-3 my-4">
+                <h2><b> Category</b></h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><h4 class="text-dark">Electronic</h4></a>
+                      </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><h4 class="text-dark">Fashion</h4></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><h4 class="text-dark">Beauty</h4></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><h4 class="text-dark">Home & Kitchen</h4></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><h4 class="text-dark">Furniture</h4></a>
+                    </li>
+                   
+                  </ul>
+            </div>
+            <div class=" col-12 col-md-3 my-4">
+                <h2><b> Customer Account</b></h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><h4 class="text-dark">My account </h4></a>
+                      </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><h4 class="text-dark">FAQ</h4></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><h4 class="text-dark">term and condition</h4></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><h4 class="text-dark">Privacy and policy</h4></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><h4 class="text-dark">E-weast policy</h4></a>
+                    </li>
+                   
+                  </ul>
+
+            </div>
+        </div>
+    </div>
 
 
 
